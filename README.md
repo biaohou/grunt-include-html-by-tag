@@ -1,86 +1,51 @@
-# grunt-include-html
+# grunt-include-html-by-tag
 
-> The best Grunt plugin ever.
+> grunt-include-html-by-tag
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
+This plugin requires Grunt `0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-include-html --save-dev
+npm install grunt-include-html-by-tag --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-include-html');
+grunt.loadNpmTasks('grunt-include-html-by-tag');
 ```
+
+## 一句话说明 "grunt-include-html-by-tag" 能做什么！
+
+### 一句话
+它帮助开发者，实现html版的include命令！
 
 ## The "include_html" task
 
 ### Overview
-In your project's Gruntfile, add a section named `include_html` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `http_post_deploy` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  include_html: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+	include_html : {
+		default_options : {
+			options : {
+				path : dest//检测编译过的文件 到这一步的时候已经执行完毕template任务
+			}
+		}
+    }
 });
 ```
 
 ### Options
 
-#### options.separator
+#### options.path
 Type: `String`
-Default value: `',  '`
+当前项目的文件build目录
 
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
-
-### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  include_html: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  include_html: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
+## 就没其他配置了～试试吧？！
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
