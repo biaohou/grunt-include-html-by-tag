@@ -1,7 +1,7 @@
 {
   "name": "grunt-include-html-by-tag",
   "description": "The best Grunt plugin ever.",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "homepage": "https://github.com/biaohou/grunt-include-html-by-tag",
   "author": "biaohou <13910099304@139.com>",
   "repository": {

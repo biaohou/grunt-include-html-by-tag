@@ -57,7 +57,9 @@ module.exports = function(grunt){
                             //console.log("解析到的字符串＝ "+ d);
                                 
                             var include_src = d.substring("<include src=".length + 1, d.indexOf(">")-1),
-                                true_include_src = path.join(".", options.path, include_src);//根据当前路径＋发布路径 找到真实路径
+                                true_include_src = path.join(".", file_arr[i][1], include_src);//根据当前路径＋发布路径 找到真实路径
+                            
+                            //console.log(path.join(".", file_arr[i][1]));
                             
                             if(grunt.file.isFile(true_include_src)){
                                 //console.log("是文件 include_src="+ true_include_src);
