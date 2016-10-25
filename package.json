@@ -1,0 +1,44 @@
+{
+  "name": "grunt-include-html-by-tag",
+  "description": "The best Grunt plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/biaohou/grunt-include-html-by-tag",
+  "author": "biaohou <13910099304@139.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/biaohou/grunt-include-html-by-tag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/biaohou/grunt-include-html-by-tag/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/biaohou/grunt-include-html-by-tag/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "grunt",
+    "include",
+    "html"
+  ],
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-template": "^1.0.0"
+  },
+  "license": "MIT"
+}
