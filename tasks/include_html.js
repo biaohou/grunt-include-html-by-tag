@@ -14,7 +14,7 @@ module.exports = function(grunt){
 	
 	grunt.registerMultiTask("include_html","grunt-include-html-by-tag",function(){
 		// Tell Grunt this task is asynchronous.
-		var done = this.async();
+		//var done = this.async();
 		
 		//Merge task-specific and/or target-specific options with these defaults.
 		var options = this.data.options;
